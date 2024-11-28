@@ -3,7 +3,7 @@ import PDFDocument from "pdfkit";
 import fs from "fs";
 
 //Uses a generator that returns the card images to populate a pdf 
-async function generate_pdf(generator){
+export async function generate_pdf(generator){
   const doc = new PDFDocument({size: 'LEGAL'});
   doc.pipe(fs.createWriteStream("output_2.pdf"));
 
@@ -36,9 +36,14 @@ async function generate_pdf(generator){
   doc.end();
 }
 
+//
+async function* image_generator(name_list, count_list){
+
+}
+
 //test function to yeild n burgeoning cards from the scryfall art api
 //Use this to test the pdf formatter
-async function* yield_burgeoning(num) {
+export async function* yield_burgeoning(num) {
 
   for (let i=0;i<num;i++){
       try {
@@ -46,7 +51,7 @@ async function* yield_burgeoning(num) {
         
         const response = await axios.get(imageUrl, { responseType: "arraybuffer" });
         const imgBuffer = Buffer.from(response.data, "binary");
-        console.log(imgBuffer)
+        //console.log(imgBuffer)
         yield imgBuffer;
         //console.log(response);
       } catch (error) {
