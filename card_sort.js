@@ -6,12 +6,14 @@ import fs from "fs";
 
 //Complete a search on each card in a list of names
 export function construct_card_list(name_list){
-  let card_list=[];
-  for (const card_name in name_list){
+  let card_list_object={list:['hello']}
+  console.log(name_list)
+  for (let i=0;i<name_list.length;i++){
     //card list here needs to be a pass by reference
-    card_fectch(card_name,card_list);
+    card_fectch(name_list[i],card_list_object);
   }
-  return card_list;
+  console.log(card_list_object)
+  return card_list_object.list;
 
 }
 
@@ -26,12 +28,12 @@ export async function get_art_api(uri){
 
 //Generator for all card arts to fill a pdf from. needs to deal with duel-faced cards
 export async function* card_face_generator(card_list){
-
   for (let i=0;i<card_list.length;i++){
     try {
 
       if (card_faces.length==1){
         try{
+          
           const imageUrl = card_list[i].image_uris.large;
           imagebuffer=get_art_api(imageUrl);
           yield imgBuffer;
@@ -64,7 +66,7 @@ export async function* card_face_generator(card_list){
       }
 
     } catch (error) {
-      console.error(error);
+      //console.error(error);
     }finally {
    
     }
@@ -72,9 +74,18 @@ export async function* card_face_generator(card_list){
 }
 
 
+function card_pusher(card,list_obj){
+  console.log("pushing card")
+  list_obj.list.push(card)
+
+}
+
 // creats a list of cards in a cardlist
 //card list should start as an empty list, then is filled up with card json data from the search function
-export async function card_fectch(name,cardlist) {
+export async function card_fectch(name,card_list_obj) {
+  let cardlist=card_list_obj.list
+  console.log('current card list')
+  //console.log(cardlist)
 //collector's number is within a set, so we need the set and the collector's number to get an exact card
 
 //search terms for getting the most expensive:
@@ -88,17 +99,26 @@ console.log('>name<')
 console.log('>'+name+'<')
   try {
     //old search query: "https://api.scryfall.com/cards/search?order=cmc&q=!\""+name+"\" unique:prints";
-    const card_search_results = "https://api.scryfall.com/cards/search?order=cmc&q="+name+" unique:prints";
+    const card_search_results = "https://api.scryfall.com/cards/search?order=cmc&q=!\""+name+"\"unique:prints";
     
-    axios.get(card_search_results, { responseType: "json" }).then(function(response){cardlist.push(pick_card(response))});
+    await axios.get(card_search_results, { responseType: "json" }).then(function(response){card_pusher(pick_card(response),card_list_obj)});
+
+    console.log('current card list')
     //const imgBuffer = Buffer.from(response.data, "json");
 
     //doc.image(imgBuffer, 0, 15, { width: 300 }).text("Proportional to width", 0, 0);
   } catch (error) {
-    //do a less specific search
-    const less_specific_card_search_results = "https://api.scryfall.com/cards/search?order=cmc&q="+name+" unique:prints";
-    axios.get(card_search_results, { responseType: "json" }).then(function(response){cardlist.push(pick_card(response))});
-    //console.error(error);
+    try{
+      console.log('first search failed');
+      //do a less specific search
+      const less_specific_card_search_results = "https://api.scryfall.com/cards/search?order=cmc&q="+name+" unique:prints";
+      //axios.get(card_search_results, { responseType: "json" }).then(function(response){console.log(pick_card(response))});
+      await axios.get(less_specific_card_search_results, { responseType: "json" }).then(function(response){card_pusher(pick_card(response),card_list_obj)});
+      
+    }catch (error){
+      console.log('second search failed:')
+      console.log(error.response.data.details)
+    }
   } finally {
     console.log('>done<')
   }
@@ -115,7 +135,10 @@ function pick_card(data){
     for (let i=0;i<len;i++){
         //console.log(picked[i].border_color)
     }
-    return picked
+    console.log('picked a card')
+    console.log(picked[0].name)
+    console.log(picked[0].border_color)
+    return picked[0]
 }
 
 //comparison function for json card objects

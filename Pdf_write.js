@@ -5,7 +5,7 @@ import fs from "fs";
 //Uses a generator that returns the card images to populate a pdf 
 export async function generate_pdf(generator){
   const doc = new PDFDocument({size: 'LEGAL'});
-  doc.pipe(fs.createWriteStream("output_2.pdf"));
+  doc.pipe(fs.createWriteStream("output_3.pdf"));
 
   console.log('in pdf function')
 
@@ -17,10 +17,10 @@ export async function generate_pdf(generator){
 
 
   let position=0
-
   for await (let result of generator) {
-    console.log(1)
+    console.log('adding card to position:'+position)
     if (position>8){
+      console.log('adding page')
       position=0
       doc.addPage()
     }
@@ -55,6 +55,7 @@ export async function* yield_burgeoning(num) {
         yield imgBuffer;
         //console.log(response);
       } catch (error) {
+        
         console.error(error);
         yield {error: error.message};
       } finally {
