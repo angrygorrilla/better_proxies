@@ -1,152 +1,492 @@
 [
   {
-    "card_name": "Ancient Tomb",
-    "quantity": 4,
+    "card_name": "Alrund's Epiphany",
+    "quantity": 1,
+    "setName": "KHM"
+  },
+  {
+    "card_name": "Arcane Signet",
+    "quantity": 1,
+    "setName": "borderless"
+  },
+  {
+    "card_name": "Banefire",
+    "quantity": 1,
+    "setName": "CON"
+  },
+  {
+    "card_name": "Birds of Paradise",
+    "quantity": 1,
+    "setName": "10E"
+  },
+  {
+    "card_name": "Brain Freeze",
+    "quantity": 1,
     "setName": "VMA"
   },
   {
-    "card_name": "Basalt Monolith",
-    "quantity": 3,
-    "setName": "2XM"
-  },
-  {
-    "card_name": "Blast Zone",
+    "card_name": "Brainstorm",
     "quantity": 1,
-    "setName": "BRO"
+    "setName": "VMA"
   },
   {
-    "card_name": "City of Traitors",
-    "quantity": 4,
-    "setName": "EX"
-  },
-  {
-    "card_name": "Glaring Fleshraker",
-    "quantity": 4,
-    "setName": "MH3"
-  },
-  {
-    "card_name": "Grim Monolith",
-    "quantity": 4,
-    "setName": "400641"
-  },
-  {
-    "card_name": "Karn, the Great Creator",
-    "quantity": 4,
-    "setName": "WAR"
-  },
-  {
-    "card_name": "Kozilek's Command",
-    "quantity": 4,
-    "setName": "MH3"
-  },
-  {
-    "card_name": "Lotus Petal",
-    "quantity": 4,
-    "setName": "TPR"
-  },
-  {
-    "card_name": "Manifold Key",
-    "quantity": 4,
-    "setName": "M20"
-  },
-  {
-    "card_name": "Mox Opal",
+    "card_name": "Breeding Pool",
     "quantity": 1,
-    "setName": "SOM"
+    "setName": "GTC"
   },
   {
-    "card_name": "Mystic Forge",
-    "quantity": 4,
-    "setName": "40K"
-  },
-  {
-    "card_name": "Paradox Engine",
+    "card_name": "Castle Vantress",
     "quantity": 1,
-    "setName": "AER"
+    "setName": "ELD"
   },
   {
-    "card_name": "Soul-Guide Lantern",
+    "card_name": "Command Tower",
     "quantity": 1,
-    "setName": "THB"
+    "setName": "CMR"
   },
   {
-    "card_name": "The One Ring",
-    "quantity": 3,
-    "setName": "bundle"
+    "card_name": "Commercial District",
+    "quantity": 1,
+    "setName": "borderless"
   },
   {
-    "card_name": "Urza's Saga",
-    "quantity": 4,
-    "setName": "MH2"
-  },
-  {
-    "card_name": "Urza's Workshop",
-    "quantity": 4,
-    "setName": "258"
-  },
-  {
-    "card_name": "Vexing Bauble",
-    "quantity": 4,
-    "setName": "MH3"
-  },
-  {
-    "card_name": "Voltaic Key",
-    "quantity": 2,
-    "setName": "M11"
-  },
-  {
-    "card_name": "Argentum Masticore",
+    "card_name": "Conduit of Worlds",
     "quantity": 1,
     "setName": "extended"
   },
   {
-    "card_name": "Defense Grid",
-    "quantity": 3,
-    "setName": "9ED"
-  },
-  {
-    "card_name": "Disruptor Flute",
+    "card_name": "Counterspell",
     "quantity": 1,
-    "setName": "MH3"
+    "setName": "A25"
   },
   {
-    "card_name": "Ensnaring Bridge",
+    "card_name": "Crop Rotation",
     "quantity": 1,
-    "setName": "8ED"
+    "setName": "UL"
   },
   {
-    "card_name": "Faerie Macabre",
+    "card_name": "Cultivate",
+    "quantity": 1,
+    "setName": "Black is Magic"
+  },
+  {
+    "card_name": "Cyclonic Rift",
+    "quantity": 1,
+    "setName": "RTR"
+  },
+  {
+    "card_name": "Dark Depths",
+    "quantity": 1,
+    "setName": "CSP"
+  },
+  {
+    "card_name": "Delighted Halfling",
+    "quantity": 1,
+    "setName": "showcase  Scroll"
+  },
+  {
+    "card_name": "Dig Through Time",
+    "quantity": 1,
+    "setName": "KTK"
+  },
+  {
+    "card_name": "Dryad Arbor",
+    "quantity": 1,
+    "setName": "FUT"
+  },
+  {
+    "card_name": "Endurance",
+    "quantity": 1,
+    "setName": "MH2"
+  },
+  {
+    "card_name": "Exotic Orchard",
+    "quantity": 1,
+    "setName": "BLC"
+  },
+  {
+    "card_name": "Expansion",
+    "quantity": 1,
+    "setName": ""
+  },
+  {
+    "card_name": "Expedition Map",
+    "quantity": 1,
+    "setName": "borderless"
+  },
+  {
+    "card_name": "Exploration",
+    "quantity": 1,
+    "setName": "retro"
+  },
+  {
+    "card_name": "Explore",
+    "quantity": 1,
+    "setName": "MM3"
+  },
+  {
+    "card_name": "Expressive Iteration",
+    "quantity": 1,
+    "setName": "STX"
+  },
+  {
+    "card_name": "Field of Ruin",
+    "quantity": 1,
+    "setName": "MID"
+  },
+  {
+    "card_name": "Fire",
+    "quantity": 1,
+    "setName": ""
+  },
+  {
+    "card_name": "Force of Negation",
+    "quantity": 1,
+    "setName": "MH1"
+  },
+  {
+    "card_name": "Force of Vigor",
+    "quantity": 1,
+    "setName": "MH1"
+  },
+  {
+    "card_name": "Force of Will",
+    "quantity": 1,
+    "setName": "borderless"
+  },
+  {
+    "card_name": "Forest",
     "quantity": 2,
+    "setName": "254"
+  },
+  {
+    "card_name": "Frontier Bivouac",
+    "quantity": 1,
+    "setName": "KTK"
+  },
+  {
+    "card_name": "Gaea's Blessing",
+    "quantity": 1,
+    "setName": "355"
+  },
+  {
+    "card_name": "Grapeshot",
+    "quantity": 1,
+    "setName": "MMA"
+  },
+  {
+    "card_name": "Green Sun's Zenith",
+    "quantity": 1,
+    "setName": "MBS"
+  },
+  {
+    "card_name": "Growth Spiral",
+    "quantity": 1,
+    "setName": "RNA"
+  },
+  {
+    "card_name": "Gut Shot",
+    "quantity": 1,
+    "setName": "MM2"
+  },
+  {
+    "card_name": "Haywire Mite",
+    "quantity": 1,
+    "setName": "BRO"
+  },
+  {
+    "card_name": "Hedge Maze",
+    "quantity": 1,
+    "setName": "borderless"
+  },
+  {
+    "card_name": "Hullbreaker Horror",
+    "quantity": 1,
+    "setName": "VOW"
+  },
+  {
+    "card_name": "Ice Storm",
+    "quantity": 1,
+    "setName": "MED"
+  },
+  {
+    "card_name": "Island",
+    "quantity": 2,
+    "setName": "251"
+  },
+  {
+    "card_name": "Ketria Triome",
+    "quantity": 1,
+    "setName": "IKO"
+  },
+  {
+    "card_name": "Koma, Cosmos Serpent",
+    "quantity": 1,
+    "setName": "KHM"
+  },
+  {
+    "card_name": "Life from the Loam",
+    "quantity": 1,
+    "setName": "RAV"
+  },
+  {
+    "card_name": "Lightning Bolt",
+    "quantity": 1,
+    "setName": "M11"
+  },
+  {
+    "card_name": "Lorien Revealed",
+    "quantity": 1,
+    "setName": "LTR"
+  },
+  {
+    "card_name": "Mana Drain",
+    "quantity": 1,
+    "setName": "showcase"
+  },
+  {
+    "card_name": "Mental Misstep",
+    "quantity": 1,
+    "setName": "NPH"
+  },
+  {
+    "card_name": "Minsc",
+    "quantity": 1,
+    "setName": ""
+  },
+  {
+    "card_name": "Misty Rainforest",
+    "quantity": 1,
+    "setName": "MH2"
+  },
+  {
+    "card_name": "Mountain",
+    "quantity": 1,
+    "setName": "253"
+  },
+  {
+    "card_name": "Mystic Sanctuary",
+    "quantity": 1,
+    "setName": "ELD"
+  },
+  {
+    "card_name": "Mystical Tutor",
+    "quantity": 1,
+    "setName": "404480"
+  },
+  {
+    "card_name": "Narset, Parter of Veils",
+    "quantity": 1,
+    "setName": "WAR"
+  },
+  {
+    "card_name": "Nexus of Fate",
+    "quantity": 1,
+    "setName": "M19"
+  },
+  {
+    "card_name": "Noxious Revival",
+    "quantity": 1,
+    "setName": "DSK Special Guest"
+  },
+  {
+    "card_name": "Oko, Thief of Crowns",
+    "quantity": 1,
+    "setName": "showcase"
+  },
+  {
+    "card_name": "Ponder",
+    "quantity": 1,
+    "setName": "M12"
+  },
+  {
+    "card_name": "Preordain",
+    "quantity": 1,
+    "setName": "M11"
+  },
+  {
+    "card_name": "Ramunap Excavator",
+    "quantity": 1,
+    "setName": "HOU"
+  },
+  {
+    "card_name": "Reflecting Pool",
+    "quantity": 1,
     "setName": "SHM"
   },
   {
-    "card_name": "Ghost Vacuum",
+    "card_name": "Regrowth",
     "quantity": 1,
-    "setName": "DSK"
+    "setName": "A25"
   },
   {
-    "card_name": "Mycosynth Lattice",
+    "card_name": "Rejuvenating Springs",
     "quantity": 1,
-    "setName": "DST"
+    "setName": "CMR"
   },
   {
-    "card_name": "Paradox Engine",
+    "card_name": "Scalding Tarn",
     "quantity": 1,
-    "setName": "AER"
+    "setName": "ZEN"
   },
   {
-    "card_name": "Spatial Contortion",
-    "quantity": 2,
-    "setName": "162028"
+    "card_name": "Search for Azcanta",
+    "quantity": 1,
+    "setName": "XLN"
   },
   {
-    "card_name": "The One Ring",
+    "card_name": "Shadowspear",
     "quantity": 1,
-    "setName": "bundle"
+    "setName": "THB"
   },
   {
-    "card_name": "Walking Ballista",
+    "card_name": "Snapcaster Mage",
     "quantity": 1,
-    "setName": "407122"
+    "setName": "ISD"
+  },
+  {
+    "card_name": "Sol Ring",
+    "quantity": 1,
+    "setName": "CMM"
+  },
+  {
+    "card_name": "Spell Pierce",
+    "quantity": 1,
+    "setName": "MM3"
+  },
+  {
+    "card_name": "Steam Vents",
+    "quantity": 1,
+    "setName": "RTR"
+  },
+  {
+    "card_name": "Stomping Ground",
+    "quantity": 1,
+    "setName": "GPT"
+  },
+  {
+    "card_name": "Storm, Force of Nature",
+    "quantity": 1,
+    "setName": "Marvel Storm"
+  },
+  {
+    "card_name": "Strip Mine",
+    "quantity": 1,
+    "setName": "EXP"
+  },
+  {
+    "card_name": "Sylvan Library",
+    "quantity": 1,
+    "setName": "PZ1"
+  },
+  {
+    "card_name": "Sylvan Scrying",
+    "quantity": 1,
+    "setName": "161767"
+  },
+  {
+    "card_name": "Taiga",
+    "quantity": 1,
+    "setName": "VMA"
+  },
+  {
+    "card_name": "Talisman of Curiosity",
+    "quantity": 1,
+    "setName": "MH1"
+  },
+  {
+    "card_name": "Temple of Mystery",
+    "quantity": 1,
+    "setName": "158166"
+  },
+  {
+    "card_name": "Thespian's Stage",
+    "quantity": 1,
+    "setName": "GTC"
+  },
+  {
+    "card_name": "Thousand-Year Storm",
+    "quantity": 1,
+    "setName": "FDN"
+  },
+  {
+    "card_name": "Three Steps Ahead",
+    "quantity": 1,
+    "setName": "OTJ"
+  },
+  {
+    "card_name": "Time Warp",
+    "quantity": 1,
+    "setName": "M10"
+  },
+  {
+    "card_name": "Tropical Island",
+    "quantity": 1,
+    "setName": "VMA"
+  },
+  {
+    "card_name": "Underworld Breach",
+    "quantity": 1,
+    "setName": "THB"
+  },
+  {
+    "card_name": "Uro, Titan of Nature's Wrath",
+    "quantity": 1,
+    "setName": "THB"
+  },
+  {
+    "card_name": "Urza's Saga",
+    "quantity": 1,
+    "setName": "MH2"
+  },
+  {
+    "card_name": "Veil of Summer",
+    "quantity": 1,
+    "setName": "M20"
+  },
+  {
+    "card_name": "Voidslime",
+    "quantity": 1,
+    "setName": "retro"
+  },
+  {
+    "card_name": "Volcanic Island",
+    "quantity": 1,
+    "setName": "VMA"
+  },
+  {
+    "card_name": "Wasteland",
+    "quantity": 1,
+    "setName": "155679"
+  },
+  {
+    "card_name": "Waterlogged Grove",
+    "quantity": 1,
+    "setName": "MH1"
+  },
+  {
+    "card_name": "Weather the Storm",
+    "quantity": 1,
+    "setName": "MH1"
+  },
+  {
+    "card_name": "Wilderness Reclamation",
+    "quantity": 1,
+    "setName": "RNA"
+  },
+  {
+    "card_name": "Wooded Foothills",
+    "quantity": 1,
+    "setName": "borderless"
+  },
+  {
+    "card_name": "Worldly Tutor",
+    "quantity": 1,
+    "setName": "MI"
+  },
+  {
+    "card_name": "Young Pyromancer",
+    "quantity": 1,
+    "setName": "M14"
   }
 ]
