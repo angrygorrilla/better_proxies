@@ -29,20 +29,27 @@ export async function get_art_api(uri) {
 }
 
 // Generator to yield card face images for a PDF
-export async function* card_face_generator(card_list) {
-  for (let card of card_list) {
-    try {
-      const faces = card.card_faces || [{ image_uris: card.image_uris }];
+export async function* card_face_generator(card_list,card_number) {
+  console.log(card_number)
+  if (card_list.length!==card_number.length){
+    console.log('different lengths!')
+    throw error
+  }
+  for (const [i, card] of card_list.entries()) {
+    for (let j=0;j<card_number[i];j++){
+      try {
+        const faces = card.card_faces || [{ image_uris: card.image_uris }];
 
-      for (let face of faces) {
-        const imageUrl = face.image_uris?.large || face.image_uris?.normal;
-        if (imageUrl) {
-          const imgBuffer = await get_art_api(imageUrl);
-          yield imgBuffer;
+        for (let face of faces) {
+          const imageUrl = face.image_uris?.large || face.image_uris?.normal;
+          if (imageUrl) {
+            const imgBuffer = await get_art_api(imageUrl);
+            yield imgBuffer;
+          }
         }
+      } catch (error) {
+        console.error("Error in card_face_generator:", error.message);
       }
-    } catch (error) {
-      console.error("Error in card_face_generator:", error.message);
     }
   }
 }
