@@ -32,7 +32,7 @@ function test_array() {
 		console.log("Fetched cards:", cards);
 
 		// Generate a generator for card faces
-		let generator = card_sort.card_face_generator(cards);
+		let generator = card_sort.card_face_generator(cards,[2,3]);
 
 		// Pass the generator to the PDF generation function
 		await pdf_write.generate_pdf(generator);
