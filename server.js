@@ -16,6 +16,7 @@ app.post("/cards", async (req, res) => {
 	console.log(req.body.cards);
 	try {
 		const card_name_list = req.body.cards;
+		const card_quantity_list = req.body.quantity;
 
 		if (!card_name_list || !Array.isArray(card_name_list)) {
 			return res.status(400).send("Invalid or missing card names.");
@@ -28,7 +29,7 @@ app.post("/cards", async (req, res) => {
 		console.log("Fetched cards:", cards);
 
 		// Generate a generator for card faces
-		let generator = card_sort.card_face_generator(cards);
+		let generator = card_sort.card_face_generator(cards, card_quantity_list);
 
 		// Generate the PDF
 		const outputFilePath = "output_cards.pdf"; // Specify the file path
@@ -137,5 +138,3 @@ const PORT = 3000;
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
 });
-
-

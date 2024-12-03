@@ -4,19 +4,21 @@ import deck from "../../decks.json";
 
 const Button = () => {
 	const [cardNames, setCardNames] = useState([]);
-	const [deckLength, setDeckLength] = useState(0);
+	const [cardCopies, setCardCopies] = useState([]);
 	const [downloadLink, setDownloadLink] = useState("");
 
 	const handleSubmit = async () => {
 		const cardNames = deck.map((card) => card.card_name);
+		const cardCopies = deck.map((card) => card.quantity);
 
 		setCardNames(cardNames);
-		setDeckLength(cardNames.length);
+		setCardCopies(cardCopies);
 
 		try {
-			console.log(cardNames);
+			console.log(cardCopies);
 			const response = await axios.post("http://localhost:3000/cards", {
 				cards: cardNames,
+				quantity: cardCopies,
 			});
 
 			// Update the download link with the response data
